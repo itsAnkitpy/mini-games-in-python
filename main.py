@@ -12,7 +12,7 @@ while True:
     - ConnectFour (4)
     - Tic Tac Toe (5)
 Select a game (press a number or 'q' to quit): """
-
+                           
     value = input(txt)
 
     if value == "1": 
