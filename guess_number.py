@@ -47,6 +47,8 @@ def guess_the_number(x):
 
         if turns == 0:
             print('You have ran out of attempts. YOU LOSE')
+            break
+
         elif guess != random_number:
             print(f'You have {turns} attempts to guess the number.')
             print("Guess again")
