@@ -1,8 +1,11 @@
 import os
+
+from hangman import hangman_game
 os.system('cls')
 
 from guess_number import guess_the_number
 from rps import rock_paper_scissors
+from hangman import hangman_game
 
 
 # More Games to be added
@@ -10,9 +13,10 @@ while True:
     txt = """Welcome to Mini Games!!!
     - Guess The Number (1)
     - Rock, Paper, Scissors (2)
-    - Wordle (3)
-    - ConnectFour (4)
-    - Tic Tac Toe (5)
+    - Hangman Game(3)
+    - Wordle (4)
+    - ConnectFour (5)
+    - Tic Tac Toe (6)
 Select a game (press a number or 'q' to quit): """
                            
     value = input(txt)
@@ -24,6 +28,9 @@ Select a game (press a number or 'q' to quit): """
 
     elif value == "2":
         rock_paper_scissors()
+
+    elif value == "3":
+        hangman_game()
 
     elif value == "q":
         print('Thanks for playing Mini Games')
