@@ -1,11 +1,10 @@
 import os
-
-from hangman import hangman_game
 os.system('cls')
 
 from guess_number import guess_the_number
 from rps import rock_paper_scissors
 from hangman import hangman_game
+from wordle import Wordle
 
 
 # More Games to be added
@@ -31,6 +30,10 @@ Select a game (press a number or 'q' to quit): """
 
     elif value == "3":
         hangman_game()
+
+    elif value == "4":
+        game = Wordle()
+        game.play()
 
     elif value == "q":
         print('Thanks for playing Mini Games')
